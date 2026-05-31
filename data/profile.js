@@ -36,6 +36,7 @@ const profile = {
         "Built and maintained PT Tool v2.3.0 for factory-line flashing + FCT/EOL batch testing (100-unit TVS LEVDC production batches); automated charge-cycle testing via Python scripts + Next.js frontend (OCPP/HTTP)",
         "Analyzed OCPP 1.6/2.0.1 message flows, LittleFS filesystem dumps, serial logs, offline transaction records; maintained KCPP (Kazam's MQTT-based proprietary protocol) — AES-encrypted BLE telemetry/transaction characteristics",
         "Managed 20+ firmware variants: LEVAC 3.3KW (v34.0.19–34.2.3), LEVAC 7.4KW (v44.1.2–45.1.8T, Adani/PN7160 NFC), LEVDC TVS (v35.1.3–35.3.5), EMO, Plug Easy, Tata Power — SIM800 (2G GSM) and L510 (4G LTE) modem variants",
+        "On-site field testing at Delta facility (TVS LEVDC current spike testing), TVS Hosur Plant (32A iQUBE vehicle inrush current — peak 86.75A measured), TUV SUD lab (IP testing), ARAI-specified tests; integrated ESP-Matter protocol with Google Home/Alexa for EV charging use-case",
       ],
       skills: [
         "C", "C++", "ESP-IDF v5.4", "ESP32", "STM32 (G0/L1)", "CMake",
@@ -69,7 +70,7 @@ const profile = {
     "Backend & DB": ["Node.js", "Spring Boot", "MySQL", "Firebase", "Supabase", "REST APIs", "JDBC", "MQTT"],
     "Firmware & Embedded": [
       "ESP32", "ESP-IDF v5.4", "STM32 (G0/L1)", "Arduino IDE", "PlatformIO",
-      "LittleFS", "FAT Filesystem", "NVS", "FOTA", "Embedded C",
+      "LittleFS", "FAT Filesystem", "NVS", "FOTA", "FreeRTOS", "ESP-Matter", "Embedded C",
     ],
     Security: [
       "Secure Boot V2", "Flash Encryption (AES-XTS)", "NVS Encryption",
@@ -77,19 +78,19 @@ const profile = {
     ],
     Protocols: [
       "OCPP 1.6 / 2.0.1", "KCPP (MQTT)", "BLE (NimBLE)", "CAN Bus (TWAI)",
-      "GSM (SIM800)", "LTE (L510)", "NFC (PN532/PN7160)", "WebSocket",
-      "I2C", "UART", "SPI", "HTTP/HTTPS",
+      "GSM (SIM800)", "LTE (L510)", "NFC (PN532/PN7160)", "PLC (ISO 15118)",
+      "WebSocket", "I2C", "UART", "SPI", "RS485", "HTTP/HTTPS",
     ],
     "EV Standards": [
       "IS 17017", "ISO 15118-2 (V2G)", "REBUS Protocol", "DBC Format",
     ],
     Testing: [
-      "Unity Framework", "Ceedling", "PlatformIO Testing",
-      "TDD (Embedded)", "OCPP Compliance Testing", "HIL Testing",
+      "Unity Framework", "Ceedling", "CANTATA", "PlatformIO Testing",
+      "TDD (Embedded)", "OCPP Compliance Testing", "HIL Testing", "ARAI / TUV Testing",
     ],
     "Tools & DevOps": [
-      "Git", "GitHub", "VS Code", "STM32CubeIDE", "BUSMASTER v3.2.2",
-      "Bruno", "Postman", "Docklight", "CMake", "USB-CAN-B Analyzer",
+      "Git", "GitHub", "Jira", "VS Code", "STM32CubeIDE", "BUSMASTER v3.2.2",
+      "Bruno", "Postman", "Docklight", "CMake", "USB-CAN-B Analyzer", "Code Sonar",
     ],
     "Data Science": ["Pandas", "NumPy", "Matplotlib", "Data Analysis", "ML Basics", "LabVIEW"],
   },
