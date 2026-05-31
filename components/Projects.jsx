@@ -9,6 +9,7 @@ const CATEGORIES = ['All', 'Firmware', 'ML', 'Full Stack', 'Backend', 'IoT', 'Ot
 const STATUS_STYLE = {
   Ongoing:   'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
   Completed: 'bg-sky-500/10 text-sky-400 border-sky-500/20',
+  Concept:   'bg-amber-500/10 text-amber-400 border-amber-500/20',
 };
 
 export default function Projects() {

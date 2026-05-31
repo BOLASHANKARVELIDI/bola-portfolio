@@ -302,12 +302,12 @@ const profile = {
     },
     {
       id: 15,
-      title: "FLAT FARM App",
+      title: "FLAT FARM – App Concept & Copyright",
       description:
-        "Mobile application for farmers to manage farming operations digitally. Registered copyright (L-118430/2022) with the Government of India Copyright Office.",
-      tech: ["Mobile App", "UI/UX"],
+        "Conceptualized a novel mobile app idea for farmers to manage farming operations digitally. Developed the concept and documentation, and obtained an official copyright (L-118430/2022) from the Government of India Copyright Office. Full application not yet built.",
+      tech: ["Concept & Documentation", "UI/UX Ideation"],
       category: "Other",
-      status: "Completed",
+      status: "Concept",
       year: "2022",
       achievement: "Copyright L-118430/2022",
     },
@@ -340,7 +340,7 @@ const profile = {
       institution: "QIS College of Engineering and Technology",
       university: "JNTU Kakinada",
       period: "2020 – 2024",
-      score: "CGPA: 8.52 – First Class with Distinction",
+      score: "CGPA: 8.52",
       highlights: [
         "Team Leader – Automatic Computation of Electronic Formulas project",
         "Published 2 international conference research papers",
@@ -352,7 +352,7 @@ const profile = {
       degree: "Intermediate (MPC)",
       institution: "Sri Chaitanya Junior College",
       period: "2018 – 2020",
-      score: "96.1%",
+      score: "CGPA: 9.61",
       highlights: [],
     },
     {
