@@ -1,15 +1,15 @@
 const profile = {
   name: "Bola Shankar Velidi",
   initials: "BSV",
-  title: "Firmware Test Engineer & EV Systems Developer",
-  bio: "B.Tech ECE graduate with 18+ months of professional experience in ESP32/ESP-IDF firmware testing, EV charging systems (OCPP 1.6/2.0.1), embedded security (Secure Boot, Flash Encryption), CAN bus integration, and V2G/ISO 15118-2 — complemented by full-stack web and Java development skills.",
+  title: "Junior Embedded Systems Engineer",
+  bio: "B.Tech ECE graduate with 18 months of professional experience at KAZAM EV Tech as a Junior Embedded Systems Engineer — working across ESP32/ESP-IDF firmware testing, EV charging protocols (OCPP 1.6/2.0.1, KCPP), embedded security (Secure Boot, Flash Encryption, BLE AES), CAN bus systems, and V2G/ISO 15118-2. Complemented by full-stack web and Java development skills.",
   email: "velidibolashankar@gmail.com",
   linkedin: "https://www.linkedin.com/in/velidibolashankar",
   github: "https://github.com/BOLASHANKARVELIDI",
   location: "Chinnaganjam, Bapatla, Andhra Pradesh, India",
 
   stats: [
-    { value: "18+", label: "Months Experience" },
+    { value: "18", label: "Months Experience" },
     { value: "20+", label: "Projects Built" },
     { value: "10+", label: "Certifications" },
     { value: "8.52", label: "B.Tech CGPA" },
@@ -18,28 +18,31 @@ const profile = {
   experience: [
     {
       id: 1,
-      role: "Firmware Test Engineer",
-      company: "KAZAM EV Tech",
+      role: "Junior Embedded Systems Engineer",
+      company: "KAZAM EV Tech Pvt. Ltd.",
       type: "Full-time",
       period: "Nov 2024 – Present",
       location: "Remote / Hybrid",
       current: true,
+      note: "Joined as Firmware Test Engineer; role title changed to Junior Embedded Systems Engineer",
       description: [
-        "Firmware testing for ESP32/ESP-IDF OCPP 1.6 EV chargers (3.3KW, 7.4KW, 22KW AC; DC chargers) across 10+ OEM clients: TVS, OLA, Bajaj, Ather, HMCL, Tata Power, Adani, Mahindra, Simple Energy, Piaggio",
-        "Implemented ESP32 Secure Boot V2 + Flash Encryption (AES-XTS) + NVS Encryption + BLE Encryption for TVS LEVDC production deployment using esptool / espsecure / espefuse with eFuse programming",
-        "Building FAT (Firmware Automation Tool) — Electron + TypeScript desktop app with OCPP/KCPP test case management, embedded USB-CAN-B driver, Supabase backend, and SerialPort integration",
-        "Designed FATT (Firmware Application Testing Tool) — hardware+software automation rig with 13-relay Auxiliary Board simulating Control Pilot states (Phase, Neutral, Earth, Load, RCD, UV, OV, Emergency, Door Lock)",
-        "Created and validated 15+ CAN DBC files for Indian EV OEMs (OLA VCU/BMS/SC, Bajaj, TVS, Simple Energy, Piaggio, Mahindra, IS 17017-31 Indian standard, REBUS AP-P3000DM/P4000DM protocol)",
-        "Developed V2G/ISO 15118-2 implementation: RISE-V2G Java EVCC/SECC stack, full PKI certificate chain (V2G Root CA, CPO Sub-CA, Contract, MO Root), ESP32 CP signal, Raspberry Pi 5 integration",
-        "Designed STM32G030 test jig firmware for 7.4KW charger production board testing (OLED, ADC, I2C, UART, JSMN JSON, device state machine)",
-        "Built Production Test (PT) Tool for factory-line flashing and 100-unit EOL batch testing; automated charge-cycle testing via Python + Next.js frontend using OCPP/HTTP",
-        "Analyzed OCPP 1.6 / 2.0.1 message flows, LittleFS filesystem dumps, serial logs, and offline transaction records for firmware debugging across 6 product lines",
-        "Firmware variants managed: LEVAC 3.3KW (versions 34.0.19–34.2.3), LEVAC 7.4KW (44.1.2–45.1.8T), LEVDC TVS (35.1.3–35.1.8), EMO, Plug Easy, TATA Power, Adani — both SIM800 (2G GSM) and L510 (4G LTE)",
+        "Firmware testing & development for ESP32/ESP-IDF OCPP 1.6 EV chargers (LEVAC 3.3KW, 7.4KW, 22KW AC; LEVDC 5KW DC) across 10+ OEM clients: TVS Motors, OLA Electric, Bajaj, Ather, HMCL, Tata Power, Adani, Mahindra, Simple Energy, Piaggio",
+        "Implemented ESP32 Secure Boot V2 (ECDSA RSA-2048) + AES-XTS Flash Encryption + NVS Encryption + BLE AES Encryption for TVS LEVDC production deployment using esptool, espsecure, espefuse (eFuse programming)",
+        "Building FAT (Firmware Automation Tool) — Electron + TypeScript desktop app with OCPP/KCPP test case management, embedded USB-CAN-B CAN driver (ControlCAN DLL), Supabase backend, and SerialPort integration",
+        "Designed FATT (Firmware Application Testing Tool) — hardware+software automation rig: 13-relay Auxiliary Board controlling Phase, Neutral, Earth, Load, Control Pilot states (Preparing, Charging, Ventilate, Short Diode, Short Circuit), Emergency, RCD, UV, OV, Door Lock; ESP32 firmware with UART/BLE command interface",
+        "Developed and validated 15+ CAN DBC files for Indian EV OEMs: OLA VCU/BMS/Supercapacitor, Bajaj CHG R116L, TVS Chagori, Simple Energy, Piaggio Type-6, Mahindra ChargeNet, IS 17017-31 Indian standard, REBUS AP-P3000DM/P4000DM; CAN analysis using BUSMASTER v3.2.2 and USB-CAN-B hardware analyzer",
+        "Developed V2G/ISO 15118-2 implementation: RISE-V2G Java EVCC+SECC stack, full PKI certificate chain generation (V2G Root CA, CPO Sub-CA 1/2, Contract Cert, MO Root CA, OEM Root CA), ESP32 Control Pilot 5% signal, Raspberry Pi 5 + ADS1115 ADC integration",
+        "Designed STM32G030 test jig firmware for 7.4KW charger production board testing (OLED, ADC, I2C, UART, JSMN JSON, device state machine); participated in PCB schematic review for New Controller Card (ESP32 + STM32, 4G modem, Ethernet, M90E26 energy meter IC)",
+        "Built and maintained PT Tool v2.3.0 for factory-line flashing + FCT/EOL batch testing (100-unit TVS LEVDC production batches); automated charge-cycle testing via Python scripts + Next.js frontend (OCPP/HTTP)",
+        "Analyzed OCPP 1.6/2.0.1 message flows, LittleFS filesystem dumps, serial logs, offline transaction records; maintained KCPP (Kazam's MQTT-based proprietary protocol) — AES-encrypted BLE telemetry/transaction characteristics",
+        "Managed 20+ firmware variants: LEVAC 3.3KW (v34.0.19–34.2.3), LEVAC 7.4KW (v44.1.2–45.1.8T, Adani/PN7160 NFC), LEVDC TVS (v35.1.3–35.3.5), EMO, Plug Easy, Tata Power — SIM800 (2G GSM) and L510 (4G LTE) modem variants",
       ],
       skills: [
-        "C", "C++", "ESP-IDF", "ESP32", "STM32", "CMake", "OCPP 1.6",
-        "CAN Bus", "Secure Boot", "Flash Encryption", "V2G", "ISO 15118",
-        "Unity Framework", "TypeScript", "Electron", "Python", "Java",
+        "C", "C++", "ESP-IDF v5.4", "ESP32", "STM32 (G0/L1)", "CMake",
+        "OCPP 1.6/2.0.1", "KCPP (MQTT)", "CAN Bus", "BLE (NimBLE)",
+        "Secure Boot V2", "Flash Encryption", "AES Encryption",
+        "V2G / ISO 15118-2", "Unity Framework", "TypeScript", "Electron",
+        "Python", "Java", "BUSMASTER", "esptool", "espsecure", "espefuse",
       ],
     },
     {
@@ -65,25 +68,28 @@ const profile = {
     Frontend: ["React", "Next.js", "Electron", "HTML5", "CSS3", "Tailwind CSS"],
     "Backend & DB": ["Node.js", "Spring Boot", "MySQL", "Firebase", "Supabase", "REST APIs", "JDBC", "MQTT"],
     "Firmware & Embedded": [
-      "ESP32", "ESP-IDF v5.3", "STM32 (G0/L1)", "Arduino", "PlatformIO",
+      "ESP32", "ESP-IDF v5.4", "STM32 (G0/L1)", "Arduino IDE", "PlatformIO",
       "LittleFS", "FAT Filesystem", "NVS", "FOTA", "Embedded C",
     ],
-    "Security": [
+    Security: [
       "Secure Boot V2", "Flash Encryption (AES-XTS)", "NVS Encryption",
-      "esptool", "espsecure", "espefuse", "X.509 PKI",
+      "BLE AES Encryption", "esptool", "espsecure", "espefuse", "X.509 PKI",
     ],
     Protocols: [
-      "OCPP 1.6 / 2.0.1", "KCPP (MQTT)", "BLE (NimBLE)", "CAN Bus",
-      "GSM (SIM800)", "LTE (L510)", "WebSocket", "I2C", "UART", "HTTP/HTTPS",
+      "OCPP 1.6 / 2.0.1", "KCPP (MQTT)", "BLE (NimBLE)", "CAN Bus (TWAI)",
+      "GSM (SIM800)", "LTE (L510)", "NFC (PN532/PN7160)", "WebSocket",
+      "I2C", "UART", "SPI", "HTTP/HTTPS",
     ],
-    "EV Standards": ["IS 17017", "ISO 15118-2 (V2G)", "REBUS Protocol", "DBC Format"],
+    "EV Standards": [
+      "IS 17017", "ISO 15118-2 (V2G)", "REBUS Protocol", "DBC Format",
+    ],
     Testing: [
       "Unity Framework", "Ceedling", "PlatformIO Testing",
       "TDD (Embedded)", "OCPP Compliance Testing", "HIL Testing",
     ],
     "Tools & DevOps": [
-      "Git", "GitHub", "VS Code", "STM32CubeIDE", "Bruno", "Postman",
-      "Docklight", "CMake", "CANTest", "USB-CAN-B Analyzer",
+      "Git", "GitHub", "VS Code", "STM32CubeIDE", "BUSMASTER v3.2.2",
+      "Bruno", "Postman", "Docklight", "CMake", "USB-CAN-B Analyzer",
     ],
     "Data Science": ["Pandas", "NumPy", "Matplotlib", "Data Analysis", "ML Basics", "LabVIEW"],
   },
@@ -93,7 +99,7 @@ const profile = {
       id: 1,
       title: "FAT – Firmware Automation Tool",
       description:
-        "Electron + TypeScript desktop application for automated EV charger firmware testing. Integrates OCPP/KCPP test case management (JSON seed data), embedded USB-CAN-B CAN bus driver (ControlCAN DLL), Supabase backend for test results, and SerialPort for real-time firmware interaction.",
+        "Electron + TypeScript desktop application for automated EV charger firmware testing. Features OCPP/KCPP test case management (JSON seed data), embedded USB-CAN-B CAN bus driver (ControlCAN DLL), Supabase backend for test results, and SerialPort for real-time firmware interaction. Built with Vite and Tailwind CSS.",
       tech: ["Electron", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "SerialPort", "CAN Bus", "OCPP", "KCPP"],
       category: "Firmware",
       status: "Ongoing",
@@ -105,8 +111,8 @@ const profile = {
       id: 2,
       title: "FATT – Firmware Application Testing Tool",
       description:
-        "Self-designed hardware+software EV charger test automation system. Hardware: 13-relay Auxiliary Board (Phase, Neutral, Earth, Load, Emergency, Battery, Door Lock, Control Pilot states — Preparing/Charging/Ventilate/Short Diode/Short Circuit). Firmware: ESP32 UART/BLE command interface. Software: OCPP/MQTT test case runner with pass/fail log terminals.",
-      tech: ["C/C++", "ESP-IDF", "ESP32", "MQTT", "OCPP", "BLE (NimBLE)", "Relay Control", "Control Pilot", "UART"],
+        "Self-designed hardware+software EV charger test automation system. Hardware: 13-relay Auxiliary Board (Phase, Neutral, Earth, Load, Emergency, Battery, Door Lock, Control Pilot states — Preparing/Charging/Ventilate/Short Diode/Short Circuit/Proximity Pilot, RCD, UV, OV). ESP32 firmware receives commands via UART or BLE. GUI runs OCPP/KCPP test cases with log terminals for FATT, Auxiliary Board, Main Board, and MQTT/OCPP.",
+      tech: ["C/C++", "ESP-IDF", "ESP32", "MQTT", "OCPP", "BLE (NimBLE)", "Relay Control", "Control Pilot Circuit", "UART"],
       category: "Firmware",
       status: "Ongoing",
       github: null,
@@ -115,10 +121,10 @@ const profile = {
     },
     {
       id: 3,
-      title: "ESP32 Secure Boot + Flash & NVS Encryption",
+      title: "ESP32 Secure Boot + Flash & NVS + BLE Encryption",
       description:
-        "Production security implementation for TVS LEVDC EV chargers. Configured ESP-IDF Secure Boot V2 (ECDSA RSA-2048 signing key), AES-XTS Flash Encryption, NVS Encryption, and BLE Encryption. Performed eFuse programming with espefuse, signed firmware binaries with espsecure, verified encrypted flash args, and created LittleFS partition dumps for storage validation.",
-      tech: ["ESP-IDF", "ESP32", "Secure Boot V2", "Flash Encryption", "NVS Encryption", "espsecure", "espefuse", "X.509 PKI", "LittleFS"],
+        "Full embedded security stack for TVS LEVDC EV chargers in production. Configured ESP-IDF Secure Boot V2 (ECDSA RSA-2048 signing key, encrypted flash args), AES-XTS Flash Encryption, NVS Encryption, and AES-encrypted BLE communication (KCPP telemetry/transaction over BLE characteristics). Performed eFuse programming with espefuse, signed binaries with espsecure, and verified LittleFS partition dumps.",
+      tech: ["ESP-IDF", "ESP32", "Secure Boot V2", "Flash Encryption (AES-XTS)", "NVS Encryption", "BLE AES", "espsecure", "espefuse", "X.509 PKI", "LittleFS"],
       category: "Firmware",
       status: "Completed",
       github: null,
@@ -128,9 +134,9 @@ const profile = {
     },
     {
       id: 4,
-      title: "V2G ISO 15118-2 Implementation",
+      title: "V2G – ISO 15118-2 Implementation",
       description:
-        "Vehicle-to-Grid communication system using RISE-V2G Java open-source stack (EVCC + SECC modules). Built full PKI certificate chain: V2G Root CA, CPO Sub-CA 1/2, Contract Cert, MO Root CA, OEM Root CA. Integrated ESP32 Control Pilot 5% duty cycle signal generation and ADS1115 ADC on Raspberry Pi 5 for pilot signal measurement.",
+        "Vehicle-to-Grid communication system using the RISE-V2G Java open-source stack (EVCC + SECC modules). Built full PKI certificate chain: V2G Root CA, CPO Sub-CA 1/2, Contract Cert, MO Root CA, OEM Root CA. Integrated ESP32 Control Pilot 5% duty cycle signal generation, ADS1115 ADC on Raspberry Pi 5 for pilot signal measurement, and OCPP + ISO 15118 combined integration module.",
       tech: ["Java", "Maven", "ISO 15118-2", "RISE-V2G", "ESP32", "PKI / X.509", "Raspberry Pi 5", "ADS1115", "OCPP", "Python"],
       category: "Firmware",
       status: "Ongoing",
@@ -143,8 +149,8 @@ const profile = {
       id: 5,
       title: "KAZAM OCPP 1.6 Firmware Testing Suite",
       description:
-        "Multi-client firmware testing across 6+ EV charger product lines (LEVAC 3.3KW, 7.4KW, 22KW AC; LEVDC DC) for 10+ Indian EV OEMs. Test coverage: RFID authentication, FOTA OTA updates, energy metering (M90E26), CAN bus integration, smart charging duty cycle, RCD/UV/OV fault injection, offline transaction handling, OCPP 1.6 compliance checklists.",
-      tech: ["C", "C++", "ESP-IDF", "ESP32", "OCPP 1.6", "CMake", "Unity Framework", "CAN Bus", "LittleFS", "SIM800", "L510 LTE"],
+        "Multi-client firmware testing across 6+ EV charger product lines for 10+ Indian OEMs. Coverage: RFID authentication (PN7160 NFC, MFRC522), FOTA OTA (FTP/HTTP), energy metering (M90E26), CAN bus integration, smart charging duty cycle, RCD/earth fault/UV/OV fault injection, offline transaction handling, LittleFS storage verification, OCPP 1.6 compliance checklists. Managed 20+ firmware build variants.",
+      tech: ["C", "C++", "ESP-IDF", "ESP32", "OCPP 1.6", "CMake", "Unity Framework", "CAN Bus", "LittleFS", "NFC (PN7160)", "SIM800", "L510 LTE"],
       category: "Firmware",
       status: "Ongoing",
       github: null,
@@ -155,8 +161,8 @@ const profile = {
       id: 6,
       title: "CAN DBC Analysis & Multi-OEM EV Integration",
       description:
-        "Created and validated 15+ CAN DBC database files for Indian EV OEMs: OLA Electric (VCU/BMS/Supercapacitor), Bajaj CHG R116L, TVS Chagori (DC), Simple Energy, Piaggio Type-6, Mahindra ChargeNet, EMO DC, IS 17017-31 Indian Standard, REBUS AP-P3000DM/P4000DM protocol. Used USB-CAN-B hardware analyzer with C/Python SDKs on Jetson and Raspberry Pi.",
-      tech: ["CAN Bus", "DBC Format", "Python", "C++", "USB-CAN-B", "IS 17017", "REBUS Protocol", "Raspberry Pi", "Jetson"],
+        "Created and validated 15+ CAN DBC database files for Indian EV OEMs: OLA Electric (VCU/BMS/Supercapacitor), Bajaj CHG R116L, TVS Chagori DC charger, Simple Energy, Piaggio Type-6, Mahindra ChargeNet, EMO DC, IS 17017-31 Indian Standard, REBUS AP-P3000DM/P4000DM. CAN analysis using BUSMASTER v3.2.2 and USB-CAN-B hardware analyzer with C/Python SDKs on Jetson and Raspberry Pi.",
+      tech: ["CAN Bus", "DBC Format", "BUSMASTER v3.2.2", "Python", "C++", "USB-CAN-B", "IS 17017", "REBUS Protocol", "Raspberry Pi"],
       category: "Firmware",
       status: "Completed",
       github: null,
@@ -166,10 +172,10 @@ const profile = {
     },
     {
       id: 7,
-      title: "STM32 Test Jig Firmware",
+      title: "Earth Fault Detection System",
       description:
-        "STM32G030F6P-based production test jig firmware for 7.4KW EV charger board testing. Features OLED display, multi-channel ADC for voltage/current measurement, I2C peripherals, UART debug logging, JSMN JSON parser, device state machine, and configurable harness profiles for different board variants.",
-      tech: ["STM32G030", "STM32CubeIDE", "C", "HAL Library", "OLED", "I2C", "ADC", "UART", "JSMN JSON"],
+        "ESP32/ESP-IDF-based earth fault detection system for EV charger safety. Detects earth fault conditions in the charging circuit and triggers relay-based isolation. Integrated with the main OCPP firmware state machine for fault reporting, LED indication (orange on fault), and OCPP error messaging.",
+      tech: ["ESP32", "ESP-IDF", "C/C++", "Earth Fault Detection", "Relay Control", "GPIO", "OCPP Fault Handling"],
       category: "Firmware",
       status: "Completed",
       github: null,
@@ -178,10 +184,10 @@ const profile = {
     },
     {
       id: 8,
-      title: "New Controller Card – ESP32 + STM32 Dual MCU",
+      title: "STM32 Test Jig Firmware",
       description:
-        "Hardware bring-up and dual-firmware development for a new EV charger controller PCB. ESP32 (ESP-IDF): 4G modem (L510 ModemEval), Ethernet, CAN bridge. STM32 (STM32CubeIDE): dedicated co-processor. Hardware: M90E26 energy metering IC, RTC, ESP32-STM32 CAN communication (custom DBC). Reviewed PCB schematics (top/bottom layers).",
-      tech: ["ESP32", "STM32", "ESP-IDF", "STM32CubeIDE", "CAN Bus", "4G LTE (L510)", "Ethernet", "RTC", "M90E26 Energy Meter"],
+        "STM32G030F6P-based production test jig firmware for 7.4KW EV charger board testing. Features OLED display with real-time status, multi-channel ADC for voltage/current measurement, I2C peripheral scanning, UART debug logging, JSMN JSON parser for configuration, device state machine, and configurable harness profiles for different board hardware revisions.",
+      tech: ["STM32G030", "STM32CubeIDE", "C", "HAL Library", "OLED", "I2C", "ADC", "UART", "JSMN JSON"],
       category: "Firmware",
       status: "Completed",
       github: null,
@@ -190,9 +196,33 @@ const profile = {
     },
     {
       id: 9,
+      title: "New Controller Card – ESP32 + STM32 Dual MCU",
+      description:
+        "Firmware bring-up for a new dual-MCU EV charger controller PCB. ESP32 (ESP-IDF): 4G modem integration (L510), Ethernet (W5500/W6100), CAN bus bridge. STM32 co-processor: HAL-based peripheral control. Hardware includes M90E26 energy metering IC and RTC; ESP32-STM32 CAN communication defined via custom DBC file. Reviewed PCB schematics (top and bottom layers).",
+      tech: ["ESP32", "STM32", "ESP-IDF", "STM32CubeIDE", "CAN Bus", "4G LTE (L510)", "Ethernet (W5500)", "RTC", "M90E26 Energy Meter"],
+      category: "Firmware",
+      status: "Completed",
+      github: null,
+      demo: null,
+      year: "2025",
+    },
+    {
+      id: 10,
+      title: "Production Test (PT) Tool",
+      description:
+        "Factory-line production testing utility (v2.3.0) for ESP32-based EV chargers. Automates firmware flashing (bootloader, partitions, app, littlefs binaries), Individual Card Tests (4G/LTE module, Mother Board, LEVDC Controller, CAN SMPS, HUB PCB), peripheral tests (Energy Meter, GSM, LED, Wi-Fi, BLE, RCD, Emergency Stop, CAN, RFID), and EOL functional tests. Used in 100-unit TVS LEVDC production batches.",
+      tech: ["ESP32", "esptool", "Serial Protocol (.ptp)", "C/C++", "Electron", "Production Testing"],
+      category: "Firmware",
+      status: "Completed",
+      github: null,
+      demo: null,
+      year: "2025",
+    },
+    {
+      id: 11,
       title: "EV Charger Cycle Test Automation",
       description:
-        "Full-stack automation tool for sustained EV charger cycle testing. Python backend triggers Start/Stop OCPP transactions and HTTP enable/disable commands; Next.js + TypeScript frontend provides real-time test execution dashboard. Supports continuous charge-cycle runs for burn-in and stability testing.",
+        "Full-stack automation tool for sustained EV charger burn-in and cycle testing. Python backend triggers Start/Stop OCPP transactions via HTTP (enable.py, start.py); Next.js + TypeScript frontend dashboard provides real-time cycle tracking. Supports continuous charge-session runs for stability and load testing.",
       tech: ["Python", "Next.js", "TypeScript", "Tailwind CSS", "OCPP", "HTTP REST"],
       category: "Full Stack",
       status: "Completed",
@@ -201,7 +231,7 @@ const profile = {
       year: "2025",
     },
     {
-      id: 10,
+      id: 12,
       title: "Serial Monitor for EV Transactions",
       description:
         "Web-based and Windows serial port monitor for real-time EV charging transaction tracking. Reads and displays live OCPP/KCPP serial data from EV firmware for debugging state machines, transaction flows, and modem AT command sequences.",
@@ -212,19 +242,7 @@ const profile = {
       demo: null,
     },
     {
-      id: 11,
-      title: "Production Test (PT) Tool",
-      description:
-        "Factory-line production testing utility for ESP32-based EV chargers. Automates flashing (bootloader, partitions, app binaries), functional circuit testing (FCT), and end-of-line (EOL) verification for 100-unit production batches. Includes serial command protocol (.ptp scripts) for test sequence execution.",
-      tech: ["ESP32", "esptool", "Serial Protocol", "C", "Electron"],
-      category: "Firmware",
-      status: "Completed",
-      github: null,
-      demo: null,
-      year: "2025",
-    },
-    {
-      id: 12,
+      id: 13,
       title: "Employee Management System",
       description:
         "Full-stack CRUD application with React frontend and Spring Boot backend. Features JWT authentication, role-based access control, and MySQL database integration.",
@@ -237,7 +255,7 @@ const profile = {
       featured: true,
     },
     {
-      id: 13,
+      id: 14,
       title: "Java Banking Application",
       description:
         "Console-based banking system supporting account creation, deposits, withdrawals, transfers, and full transaction history using JDBC and MySQL.",
@@ -249,7 +267,7 @@ const profile = {
       year: "July 2024",
     },
     {
-      id: 14,
+      id: 15,
       title: "Fish Weighing & Counting System",
       description:
         "Automated IoT system using load cell sensors and IR counters to accurately weigh and count fish, reducing manual labor in fishing operations.",
@@ -259,7 +277,7 @@ const profile = {
       year: "2023",
     },
     {
-      id: 15,
+      id: 16,
       title: "Smart Agriculture System",
       description:
         "IoT-based precision farming solution with soil moisture sensors, automated irrigation control, and crop health monitoring via a web dashboard.",
