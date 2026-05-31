@@ -41,16 +41,16 @@ export default function Hero() {
 
         {/* Bio */}
         <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
-          B.Tech ECE graduate (First Class with Distinction) specializing in embedded firmware,
-          OCPP/CAN protocols, and full stack development. Currently at{' '}
+          Embedded systems engineer with 18 months of experience in ESP32/ESP-IDF firmware
+          testing, OCPP 1.6 compliance, and embedded security. Currently at{' '}
           <span className="text-sky-400 font-medium">KAZAM EV Tech</span>{' '}
-          building EV charging solutions and compliance testing systems.
+          building automation tools for EV charging firmware.
         </p>
 
         {/* Location */}
         <div className="flex items-center justify-center gap-1.5 text-slate-600 text-sm mb-10">
           <MdLocationOn size={15} />
-          Chinnaganjam, Andhra Pradesh, India
+          Bangalore, India
         </div>
 
         {/* CTA buttons */}
