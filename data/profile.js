@@ -11,7 +11,7 @@ const profile = {
   stats: [
     { value: "18+", label: "Months Experience" },
     { value: "20+", label: "Projects Built" },
-    { value: "5+", label: "Certifications" },
+    { value: "10+", label: "Certifications" },
     { value: "8.52", label: "B.Tech CGPA" },
   ],
 
@@ -42,6 +42,22 @@ const profile = {
         "Unity Framework", "TypeScript", "Electron", "Python", "Java",
       ],
     },
+    {
+      id: 2,
+      role: "Data Science Intern",
+      company: "BrainOvision Solutions Pvt. Ltd.",
+      type: "Internship",
+      period: "May 2023 – Jun 2023",
+      location: "India (Remote)",
+      current: false,
+      description: [
+        "Completed data science projects and assignments over a 1-month internship",
+        "Applied Python libraries (Pandas, NumPy, Matplotlib) for data analysis and visualization",
+        "Worked on feature engineering, statistical analysis, and ML basics",
+        "Recognized as punctual, hardworking, and a quick learner by the Founder & CEO",
+      ],
+      skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Data Analysis", "Machine Learning"],
+    },
   ],
 
   skills: {
@@ -69,6 +85,7 @@ const profile = {
       "Git", "GitHub", "VS Code", "STM32CubeIDE", "Bruno", "Postman",
       "Docklight", "CMake", "CANTest", "USB-CAN-B Analyzer",
     ],
+    "Data Science": ["Pandas", "NumPy", "Matplotlib", "Data Analysis", "ML Basics", "LabVIEW"],
   },
 
   projects: [
@@ -251,6 +268,58 @@ const profile = {
       status: "Completed",
       year: "2023",
     },
+    {
+      id: 16,
+      title: "Hand Gesture Recognition System",
+      description:
+        "ML-based system providing audible and visual feedback for deaf and dumb individuals using hand gesture recognition and computer vision. Research paper published at ICACIT 2023 international conference.",
+      tech: ["Python", "Machine Learning", "Computer Vision", "OpenCV"],
+      category: "ML",
+      status: "Completed",
+      year: "2023",
+      publication: "ICACIT 2023",
+    },
+    {
+      id: 17,
+      title: "Smart Home Automation",
+      description:
+        "Arduino/NodeMCU-based smart home system with Bluetooth connectivity for wireless control of home devices and an HTML/CSS control panel interface.",
+      tech: ["Arduino", "NodeMCU", "Bluetooth", "HTML", "CSS", "Embedded C"],
+      category: "IoT",
+      status: "Completed",
+      year: "2023",
+    },
+    {
+      id: 18,
+      title: "FLAT FARM App",
+      description:
+        "Novel mobile application for typical farmers to manage farming operations digitally. Registered copyright (L-118430/2022) with the Government of India Copyright Office.",
+      tech: ["Mobile App", "UI/UX"],
+      category: "Other",
+      status: "Completed",
+      year: "2022",
+      achievement: "Copyright L-118430/2022",
+    },
+  ],
+
+  publications: [
+    {
+      id: 1,
+      title: "Weight Based Fish Counts in the Reservoir Dumping Process",
+      conference: "International Conference",
+      year: "2023",
+      role: "Team Lead & Co-author",
+      description: "Automated fish weighing and counting system using Arduino Atmega8, HX711 load cell, LM393 IR sensors, and LabVIEW-based real-time monitoring.",
+    },
+    {
+      id: 2,
+      title: "Hand Gesture Recognition with Audible Feedback for Deaf and Dumb Using ML",
+      conference: "ICACIT 2023 – 3rd International Conference on Advanced Computing and Intelligent Technologies",
+      year: "Dec 2023",
+      role: "Co-author",
+      description: "Machine learning model providing audible and visual feedback for hearing-impaired individuals using real-time hand gesture recognition.",
+      certificateNo: "ICACIT/2023/20",
+    },
   ],
 
   education: [
@@ -260,10 +329,11 @@ const profile = {
       institution: "QIS College of Engineering and Technology",
       university: "JNTU Kakinada",
       period: "2020 – 2024",
-      score: "CGPA: 8.52",
+      score: "CGPA: 8.52 – First Class with Distinction",
       highlights: [
         "Team Leader – Automatic Computation of Electronic Formulas project",
-        "Focus on IoT, Embedded Systems & Signal Processing",
+        "Published 2 international conference research papers",
+        "IEEE YESIST12 Finalist — Maker Fair Track, Egypt (2023)",
       ],
     },
     {
@@ -285,12 +355,16 @@ const profile = {
   ],
 
   certifications: [
-    { id: 1, title: "Java Foundation", issuer: "Infosys Springboard", year: "2024", type: "certification" },
-    { id: 2, title: "Java Programming", issuer: "HackerRank", year: "2024", type: "certification" },
-    { id: 3, title: "CSS & JavaScript", issuer: "Udemy", year: "2023", type: "certification" },
-    { id: 4, title: "Embedded Systems", issuer: "Course Certification", year: "2023", type: "certification" },
-    { id: 5, title: "YESIST12 Finalist", issuer: "IEEE", year: "2023", type: "achievement" },
-    { id: 6, title: "FlatFarm App Copyright", issuer: "Government of India", year: "2023", type: "achievement" },
+    { id: 1,  title: "Java Foundation",                          issuer: "Infosys Springboard",  year: "2024", type: "certification" },
+    { id: 2,  title: "Java Programming",                         issuer: "HackerRank",           year: "2024", type: "certification" },
+    { id: 3,  title: "CSS, JavaScript & PHP",                    issuer: "Udemy",                year: "2024", type: "certification" },
+    { id: 4,  title: "Programming with Python – Score: 83%",     issuer: "Internshala",          year: "2022", type: "certification" },
+    { id: 5,  title: "Data Analytics with Python",               issuer: "YBI Foundation",       year: "2022", type: "certification" },
+    { id: 6,  title: "Cloud Computing",                          issuer: "The Digital Adda",     year: "2022", type: "certification" },
+    { id: 7,  title: "Internship & Job Prep – 100% Top Performer", issuer: "Internshala",        year: "2022", type: "certification" },
+    { id: 8,  title: "YESIST12 Finalist",                        issuer: "IEEE (Egypt)",         year: "2023", type: "achievement" },
+    { id: 9,  title: "ICACIT 2023 Paper Published",              issuer: "International Conf.",  year: "2023", type: "achievement" },
+    { id: 10, title: "FlatFarm App Copyright",                   issuer: "Government of India",  year: "2022", type: "achievement" },
   ],
 };
 

@@ -34,16 +34,17 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="h-px w-12 bg-gradient-to-r from-transparent to-sky-500/40" />
           <p className="text-sky-400 text-xs font-semibold tracking-widest uppercase">
-            Firmware Engineer · Developer
+            Embedded Systems Engineer · Developer
           </p>
           <div className="h-px w-12 bg-gradient-to-l from-transparent to-sky-500/40" />
         </div>
 
         {/* Bio */}
         <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
-          B.Tech ECE graduate specializing in embedded systems, firmware testing, and full stack web
-          development. Currently building EV charging solutions at{' '}
-          <span className="text-sky-400 font-medium">KAZAM EV Tech</span>.
+          B.Tech ECE graduate (First Class with Distinction) specializing in embedded firmware,
+          OCPP/CAN protocols, and full stack development. Currently at{' '}
+          <span className="text-sky-400 font-medium">KAZAM EV Tech</span>{' '}
+          building EV charging solutions and compliance testing systems.
         </p>
 
         {/* Location */}

@@ -4,7 +4,7 @@ import profile from '@/data/profile';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { MdCode } from 'react-icons/md';
 
-const CATEGORIES = ['All', 'Firmware', 'Full Stack', 'Backend', 'IoT'];
+const CATEGORIES = ['All', 'Firmware', 'ML', 'Full Stack', 'Backend', 'IoT', 'Other'];
 
 const STATUS_STYLE = {
   Ongoing:   'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
