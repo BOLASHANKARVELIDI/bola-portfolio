@@ -30,7 +30,7 @@ const profile = {
         "Implemented ESP32 Secure Boot V2 (ECDSA RSA-2048) + AES-XTS Flash Encryption + NVS Encryption + BLE AES Encryption for TVS LEVDC EV charger production using esptool, espsecure, and espefuse for eFuse programming",
         "Building FAT (Firmware Automation Tool) — Electron + TypeScript desktop app with OCPP/KCPP test case management, USB-CAN-B CAN driver integration, Supabase backend, and SerialPort for live firmware interaction",
         "Designed FATT (Firmware Application Testing Tool) — 13-relay Auxiliary Board hardware rig simulating Control Pilot states (Phase, Neutral, Earth, RCD, UV/OV, Emergency, Door Lock) with ESP32 UART/BLE command firmware",
-        "Developed V2G / ISO 15119 (Vehicle-to-Grid) implementation using RISE-V2G Java stack (EVCC + SECC modules), built PKI certificate chain, and integrated ESP32 Control Pilot PWM signal with Raspberry Pi 5 + ADS1115 ADC",
+        "Developed V2G / ISO 15118-2 (Vehicle-to-Grid) implementation using RISE-V2G Java stack (EVCC + SECC modules), built PKI certificate chain, and integrated ESP32 Control Pilot PWM signal with Raspberry Pi 5 + ADS1115 ADC",
         // Removed: "Developed and validated 15+ CAN DBC files for Indian EV OEMs" — CAN DBC files were analyzed/studied, not created/validated by me
         "Designed STM32G030 test jig firmware for 7.4KW charger production board testing (OLED, ADC, I2C, UART, JSMN JSON, device state machine); performed PCB schematic review for New Controller Card",
         "On-site field testing at Delta facility, TVS Hosur Plant, TUV SUD IP lab, and ARAI-specified regulatory test environments",
@@ -38,7 +38,7 @@ const profile = {
       skills: [
         "C", "C++", "ESP-IDF v5.4", "ESP32", "STM32", "CMake", "FreeRTOS",
         "OCPP 1.6/2.0.1", "KCPP (MQTT)", "CAN Bus", "BLE (NimBLE)",
-        "Secure Boot V2", "Flash Encryption", "V2G / ISO 15119",
+        "Secure Boot V2", "Flash Encryption", "V2G / ISO 15118-2",
         "TypeScript", "Electron", "Python", "BUSMASTER", "esptool",
       ],
     },
@@ -116,7 +116,7 @@ const profile = {
     ],
 
     "EV Standards": [
-      "IS 17017", "ISO 15119 (V2G)", "REBUS Protocol", "DBC Format",
+      "IS 17017", "ISO 15118-2 (V2G)", "REBUS Protocol", "DBC Format",
     ],
 
     Testing: [
@@ -175,10 +175,10 @@ const profile = {
     },
     {
       id: 4,
-      title: "V2G – ISO 15119 Implementation",
+      title: "V2G – ISO 15118-2 Implementation",
       description:
         "Vehicle-to-Grid communication system using RISE-V2G Java open-source stack (EVCC + SECC modules). Built PKI certificate chain and integrated ESP32 Control Pilot 5% PWM signal with Raspberry Pi 5 + ADS1115 ADC for pilot signal measurement.",
-      tech: ["Java", "Maven", "ISO 15119", "RISE-V2G", "ESP32", "Raspberry Pi 5", "ADS1115", "Python"],
+      tech: ["Java", "Maven", "ISO 15118-2", "RISE-V2G", "ESP32", "Raspberry Pi 5", "ADS1115", "Python"],
       category: "Firmware",
       status: "Ongoing",
       github: null,
