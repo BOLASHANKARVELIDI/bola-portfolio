@@ -49,12 +49,11 @@ const profile = {
       location: "Bangalore, India",
       current: false,
       description: [
-        "Firmware testing for ESP32/ESP-IDF OCPP 1.6 EV chargers (LEVAC 3.3KW, 7.4KW; LEVDC DC) — wrote OCPP compliance checklists, test case documents, and bug reports in Jira",
-        "Tested OCPP features: RFID authentication, FOTA OTA updates, energy metering (M90E26), smart charging duty cycle, RCD/earth fault/UV/OV fault injection, offline transaction handling, LittleFS storage verification",
-        "Built Production Test (PT) Tool for factory-line firmware flashing and FCT/EOL testing; automated charge-cycle testing via Python scripts and HTTP commands",
-        "Analyzed serial logs, OCPP message flows, and crash logs across 15+ firmware versions (LEVAC 34.x, 44.x; LEVDC 35.x) for SIM800 (2G GSM) and L510 (4G LTE) variants",
-        "Studied TDD for Embedded C, implemented Unity framework unit tests with ESP-IDF hardware-in-loop; explored Ceedling and Google Test frameworks",
-        "Debugged CAN bus wiring issues (CAN-H/CAN-L swaps, transceiver mis-connections) for multiple charger integrations",
+        "Wrote OCPP 1.6 compliance verification scripts, test case documentation, and bug reports in Jira for EV charger firmware across LEVAC 3.3KW, 7.4KW, and LEVDC product lines",
+        "Developed automation scripts (Python) for charge-cycle testing, factory flashing, and FCT/EOL workflows; built the Production Test (PT) Tool for 100-unit production batch deployment",
+        "Analyzed and debugged serial logs, OCPP message flows, and firmware crash logs across 15+ build versions for SIM800 (2G GSM) and L510 (4G LTE) modem variants",
+        "Wrote Unity framework unit tests for Embedded C firmware with hardware-in-loop; explored TDD, Ceedling, and Google Test frameworks for embedded systems",
+        "Diagnosed and resolved CAN bus wiring and transceiver integration issues for multiple EV charger–vehicle communication setups",
       ],
       skills: [
         "C", "C++", "ESP-IDF", "ESP32", "OCPP 1.6", "CMake",

@@ -53,7 +53,7 @@ export default function Navbar() {
           onClick={() => scrollTo('home')}
           className="text-lg font-bold bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent"
         >
-          Bola Shankar
+          Velidi Bola Shankar
         </button>
 
         {/* Desktop links */}
