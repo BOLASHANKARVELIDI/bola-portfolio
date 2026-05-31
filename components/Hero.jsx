@@ -41,10 +41,10 @@ export default function Hero() {
 
         {/* Bio */}
         <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
-          Embedded systems engineer with 18 months of experience in ESP32/ESP-IDF firmware
-          testing, OCPP 1.6 compliance, and embedded security. Currently at{' '}
+          Embedded systems engineer at{' '}
           <span className="text-sky-400 font-medium">KAZAM EV Tech</span>{' '}
-          building automation tools for EV charging firmware.
+          — currently working on V2G / ISO 15118-2 implementation, firmware team data
+          organization, and building FAT, a unified platform for EV charging development workflows.
         </p>
 
         {/* Location */}

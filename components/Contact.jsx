@@ -26,7 +26,7 @@ const CONTACTS = [
   {
     Icon: MdLocationOn,
     label: 'Location',
-    value: 'Chinnaganjam, AP, India',
+    value: 'Bangalore, India',
     href: null,
     style: { wrapper: 'bg-emerald-500/5 border-emerald-500/20 hover:border-emerald-500/40', icon: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20' },
   },

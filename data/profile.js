@@ -2,7 +2,7 @@ const profile = {
   name: "Bola Shankar Velidi",
   initials: "BSV",
   title: "Junior Embedded Systems Engineer",
-  bio: "Embedded systems engineer with 18 months of experience at KAZAM EV Tech — focused on ESP32/ESP-IDF firmware testing, OCPP 1.6 compliance, embedded security, and building internal automation tools for EV charging systems.",
+  bio: "Embedded systems engineer at KAZAM EV Tech — currently working on V2G / ISO 15118-2 implementation, firmware team data organization, and building FAT, a unified desktop platform that consolidates EV charging development and automation workflows.",
   email: "velidibolashankar@gmail.com",
   linkedin: "https://www.linkedin.com/in/velidibolashankar",
   github: "https://github.com/BOLASHANKARVELIDI",
@@ -26,14 +26,12 @@ const profile = {
       location: "Bangalore, India",
       current: true,
       description: [
-        // Removed: "Promoted from Firmware Test Engineer; leading embedded systems development for ESP32/ESP-IDF EV charging firmware across 10+ OEM clients" — code developed by the team, not solely by me
-        "Implemented ESP32 Secure Boot V2 (ECDSA RSA-2048) + AES-XTS Flash Encryption + NVS Encryption + BLE AES Encryption for TVS LEVDC EV charger production using esptool, espsecure, and espefuse for eFuse programming",
-        "Building FAT (Firmware Automation Tool) — Electron + TypeScript desktop app with OCPP/KCPP test case management, USB-CAN-B CAN driver integration, Supabase backend, and SerialPort for live firmware interaction",
-        "Designed FATT (Firmware Application Testing Tool) — 13-relay Auxiliary Board hardware rig simulating Control Pilot states (Phase, Neutral, Earth, RCD, UV/OV, Emergency, Door Lock) with ESP32 UART/BLE command firmware",
-        "Developed V2G / ISO 15118-2 (Vehicle-to-Grid) implementation using RISE-V2G Java stack (EVCC + SECC modules), built PKI certificate chain, and integrated ESP32 Control Pilot PWM signal with Raspberry Pi 5 + ADS1115 ADC",
-        // Removed: "Developed and validated 15+ CAN DBC files for Indian EV OEMs" — CAN DBC files were analyzed/studied, not created/validated by me
-        "Designed STM32G030 test jig firmware for 7.4KW charger production board testing (OLED, ADC, I2C, UART, JSMN JSON, device state machine); performed PCB schematic review for New Controller Card",
-        "On-site field testing at Delta facility, TVS Hosur Plant, TUV SUD IP lab, and ARAI-specified regulatory test environments",
+        "Leading V2G / ISO 15118-2 (Vehicle-to-Grid) implementation using RISE-V2G Java stack (EVCC + SECC) — setting up PKI certificate chain, Control Pilot PWM signal generation, and Raspberry Pi 5 + ADS1115 ADC integration",
+        "Organizing and structuring firmware team knowledge base — consolidating documentation, test scripts, automation scripts, and development workflows for the embedded team",
+        "Building FAT (Firmware Applications Tool) — an Electron + TypeScript desktop platform unifying all EV charging development utilities: FATT automation, BLE Inspector, MQTT Monitor, Serial Log decoder, CAN Communication module, and ESP Flasher",
+        "Implemented embedded security for production deployment — Secure Boot V2, AES-XTS Flash Encryption, NVS Encryption, and BLE AES Encryption using esptool, espsecure, and espefuse",
+        "Developed STM32G030 production test jig firmware (OLED, ADC, I2C, UART, JSMN JSON, state machine) and performed PCB schematic review for New Controller Card",
+        "Planning and initiating CI/CD pipeline implementation for the firmware development workflow",
       ],
       skills: [
         "C", "C++", "ESP-IDF v5.4", "ESP32", "STM32", "CMake", "FreeRTOS",
@@ -138,10 +136,10 @@ const profile = {
   projects: [
     {
       id: 1,
-      title: "FAT – Firmware Automation Tool",
+      title: "FAT – Firmware Applications Tool",
       description:
-        "Electron + TypeScript desktop application for automated EV charger firmware testing. Features OCPP/KCPP test case management, USB-CAN-B CAN bus driver integration, Supabase backend for test results, and SerialPort for real-time firmware interaction.",
-      tech: ["Electron", "TypeScript", "Vite", "Tailwind CSS", "SerialPort", "CAN Bus", "OCPP", "KCPP"],
+        "Electron + TypeScript desktop platform that consolidates all EV charging development utilities into one place. Modules: FATT (automated test case runner), BLE Inspector (connect to OCPP/KCPP devices, simplify data communication), MQTT Monitor (subscribe & decode message payloads), Serial Log Decoder (extract and parse OCPP/KCPP frames from serial output), CAN Communication (waveform visualization, advanced signal analysis — like PEAK Software), and ESP Flasher (secure flash, normal flash, read dump, erase operations on ESP chips).",
+      tech: ["Electron", "TypeScript", "Vite", "Tailwind CSS", "SerialPort", "BLE", "MQTT", "CAN Bus", "OCPP", "KCPP"],
       category: "Firmware",
       status: "Ongoing",
       github: null,
